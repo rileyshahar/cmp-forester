@@ -7,8 +7,7 @@ source.new = function()
 end
 
 source.is_available = function()
-	return true
-	-- return vim.o.filetype == "forester"
+	return vim.o.filetype == "forester"
 end
 
 -- start completing on a (
