@@ -1,4 +1,4 @@
-local cmp = require('cmp')
+local cmp = require("cmp")
 
 local source = {}
 
@@ -12,7 +12,7 @@ end
 
 -- start completing on a (
 source.get_trigger_characters = function()
-	return { '(' }
+	return { "(" }
 end
 
 -- source.get_keyword_pattern = function()
@@ -57,7 +57,7 @@ source._split_once = function(str, sep)
 end
 
 source.complete = function(self, params, cmp_callback)
-	local command = "forester complete trees/"
+	local command = "forester complete forest.toml"
 
 	local callback = function(lines)
 		local items = {}
